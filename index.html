@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Genocide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط البحث -->
+    <div class="search-bar">
+        <input type="text" placeholder="🔍 ابحث عن جندي..." id="searchInput">
+        <button onclick="searchSoldier()">بحث</button>
+    </div>
+
+    <!-- القائمة العلوية -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">🏠 الرئيسية</a></li>
+            <li><a href="#">ℹ️ من نحن</a></li>
+            <li><a href="#">📩 تواصل معنا</a></li>
+        </ul>
+    </div>
+
+    <!-- عرض صور الجنود -->
+    <div class="soldiers-container" id="soldiersList"></div>
+
+    <!-- النافذة المنبثقة -->
+    <div id="popup" class="popup">
+        <span class="close-btn" onclick="closePopup()">❌</span>
+        <img id="popup-img" src="" alt="صورة الجندي">
+        <h2 id="popup-name"></h2>
+    </div>
+
+    <!-- التذييل -->
+    <div class="footer">
+        <p>جميع الحقوق محفوظة &#169; 2025</p>
+        <div class="social-icons">
+            <a href="https://t.me/yourchannel" target="_blank">📢 Telegram</a> |
+            <a href="https://twitter.com/yourprofile" target="_blank">🐦 X (Twitter)</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
